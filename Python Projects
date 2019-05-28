@@ -1,0 +1,325 @@
+# CS 20
+# Period 3
+# Date: 2019/05/06
+# Name: Jaden Leflar
+# Description: Changing Image
+
+
+# Creates global
+global y
+y = 77
+global x
+x = 77
+global s
+s = 7
+global i
+i = False
+global o
+o = 126
+global z
+z = 512.5
+global v
+v = 512.5
+global t
+t = 0.5
+global r
+r = 0.5
+
+
+def setup():
+    """Large canvas to work with and tells the player the how to play"""
+    print("""
+    WELCOME PLAYER!
+    HERE ARE THE CONTROLS"""
+    )
+    print("Press 'w' to go up")
+    print("Press 's' to go down")
+    print("Press 'a' to go left")
+    print("Press 'd' to go right")
+    size(1000, 1000)
+
+
+def keyPressed():
+    """Allows for the blue circle to move in every direction but limits where it can go"""
+    # Limits the circles ability to move
+    global y
+    global x
+    global s
+    global o
+    # The first rectangles on the right of the maze
+    if (y <= 162.5 and x <= 362.5 and y >= 87.5 and x >= 87.5) or (y <= 262.5 
+            and x <= 262.5 and y >= 187.5 and x >= 37.5) or (y <= 162.5 
+                and x <= 762.5 and y >= 87.5 and x >= 537.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    # Red rectangles throughout the maze
+    if (y <= 262.5 and x <= 362.5 and y >= 137.5 and x >= 280.5) or (y >= 37.5 
+            and x >= 385.5 and y <= 212.5 and x <= 462.5) or (y <= 315.5 
+                and x <= 662.5 and y >= 235.5 and x >= 285.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    if (y <= 212.5 and x <= 562.5 and y >= 87.5 and x >= 487.5) or (y <= 262.5
+            and x <= 717.5 and y >= 187.5 and x >= 587.5) or (y <= 312.5
+                 and x <= 812.5 and y >= 87.5 and x >= 737.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    if (y <= 262.5 and x <= 962.5 and y >= 187.5 and x >= 837.5) or (y <= 369.5 
+            and x <= 912.5 and y >= 280.5 and x >= 687.5) or (y <= 419.5 
+                and x <= 262.5 and y >= 237.5 and x >= 187.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    if (y <= 462.5 and x <= 162.5 and y >= 280.5 and x >= 87.5) or (y <= 512.5
+            and x <= 369.5 and y >= 330.5 and x >= 280.5) or (y <= 512.5
+                and x <= 312.5 and y >= 437.5 and x >= 87.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    if (y <= 662.5 and x <= 262.5 and y >= 487.5 and x >= 187.5) or (y <= 812.5
+            and x <= 162.5 and y >=  537.5 and x >= 87.5) or (y <= 769.5
+                and x <= 369.5 and y >= 680.5 and x >= 137.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    if (y <= 712.5 and x <= 369.5 and y >= 537.5 and x >= 280.5) or (y <= 912.5
+            and x <= 262.5 and y >= 787.5 and x >= 187.5) or (y <= 962.5
+                and x <= 512.5 and y >= 887.5 and x >= 280.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    if (y <= 862.5 and x <= 562.5 and y >= 787.5 and x >= 237.5) or (y <= 912.5
+            and x <= 612.5 and y >= 787.5 and x >= 537.5) or (y <= 962.5
+                and x <= 719.5 and y >= 687.5 and x >= 630.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    if (y <= 769.5 and x <= 562.5 and y >= 687.5 and x >= 387.5) or (y <= 769.5
+            and x <= 712.5 and y >= 700 and x >= 587.5) or (y <= 812.5
+                and x <= 962.5 and y >= 737.5 and x >= 837.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    if (y <= 719.5 and x <= 912.5 and y >= 630.5 and x >=  787.5) or (y <= 612.5
+            and x <= 962.5 and y >= 387.5 and x >= 887.5) or (y <= 512.5
+                 and x <= 862.5 and y >= 337.5 and x >= 787.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    if (y <= 662.5 and x <= 862.5 and y >= 537.5 and x >= 787.5) or (y <= 612.5
+            and x <= 769.5 and y >= 387.5 and x >= 680.5) or (y <= 562.5
+                and x <= 462.5 and y >= 437.5 and x >= 387.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    if (y <= 419.5 and x <= 462.5 and y >= 287.5 and x >= 387.5) or (y <= 512.5
+            and x <= 562.5 and y >= 437.5 and x >= 437.5) or (y <= 462.5
+                and x <= 562.5 and y >= 330.5 and x >= 487.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    if (y <= 419.5 and x <= 669.5 and y >= 330.5 and x >= 537.5) or (y <= 512.5
+            and x <= 712.5 and y >= 437.5 and x >= 587.5) or (y <= 712.5
+                and x <= 462.5 and y >= 587.5 and x >= 387.5):
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    # The red borders that are around the canvas
+    if y <= 163.5 and x <= 63 or y == 63 or x == 938 or y == 938 and x > 63 or x == 63 and y >= 210 and y <= 938:
+        y = 77
+        x = 77
+        z = 512.5
+        v = 512.5
+        o = 126
+        return y and x and z and v
+    # Gives meaning to the key "w", allowing the blue circle to go up
+    global y
+    if key == "w":
+        y = y - s
+        return y and s
+    # Gives meaning to the key "s", allowing the blue circle to go down
+    elif key == "s":
+        y = y + s
+        return y and s
+    # Gives meaning to the key "a", allowing the blue circle to go left
+    global x
+    if key == "a":
+        x = x - 7
+        return x and s
+    # Gives meaning to the key "d", allowing the blue circle to go right
+    elif key == "d":
+        x = x + s
+        return x and s
+
+
+def grid(a):
+    # Creates the giant white grind of the map
+    for a in range(-25, 1000, 50):
+        a = a + 25
+        line(a, 0, a, 1000)
+        line(0, a, 1000, a)
+
+
+def Extras():
+    global y
+    global x
+    global v
+    global z
+    global r
+    global t
+    global o
+    # Key
+    fill(255, 255, 0)
+    rect(895, o, 5, 15)
+    rect(885, o, 5, 15)
+    rect(855, o - 5, 45, 10)
+    ellipse(860, o, 25, 25)
+    fill(255)
+    # Enemy
+    ellipse(860, o, 10, 10)
+    fill(150, 10, 10)
+    rect(z, v, 25, 25)
+    if (y <= 150 and x <= 900 and y >= 100 and x >= 850):
+        o = 512.5
+        print("""
+CONGRATULATIONS, YOU FOUND A KEY
+        
+        
+...Oh wait, that's not a key?
+        """
+        )
+        z = z + t
+        if z >= 712.5:
+            t = 0
+            v = v - r
+            if v == 162.5:
+                r = 0
+                t = 1
+                z = z - t
+    elif (x <=  z + 37.5 and y <= v + 37.5 and x >= z - 12.5 and y >= v - 12.5):
+        x = 77
+        y = 77
+        z = 512.5 
+        v = 512.5
+        o = 126
+    return z and v and t and r and o and x and y
+
+
+def draw():
+    """Actually draws the game"""
+    # Draws background with grid
+    global x
+    global y
+    background(255)
+    stroke(0)
+    strokeWeight(1)
+    fill(255)
+    grid(0)
+    strokeWeight(2)
+    line(0, 500, 50, 500)
+    line(1000, 500, 950, 500)
+    line(500, 0, 500, 50)
+    line(500, 1000, 500, 950)
+    # Draws the blue circle that the player moves
+    fill(0, 0, 255)
+    ellipse(x, y, 25, 25)
+    # Draws the border with the red areas
+    fill(255, 0, 0, 150)
+    quad(50, 0, 0, 0, 0, 1000, 50, 1000)
+    quad(0, 50, 0, 0, 1000, 0, 1000, 50)
+    quad(0, 950, 0, 1000, 1000, 1000, 1000, 950)
+    quad(1000, 0, 950, 0, 950, 1000, 1000, 1000)
+    strokeWeight(2)
+    stroke(0)
+    line(0, 50, 1000, 50)
+    line(50, 0, 50, 1000)
+    line(950, 0, 950, 1000)
+    line(0, 950, 1000, 950)
+    # Draws maze with red rectangles
+    quad(100, 150, 100, 100, 350, 100, 350, 150)
+    quad(50, 200, 50, 250, 250, 250, 250, 200)
+    quad(300, 250, 300, 150, 350, 150, 350, 250)
+    quad(400, 50, 450, 50, 450, 200, 400, 200)
+    quad(300, 250, 650, 250, 650, 300, 300, 300)
+    quad(500, 100, 550, 100, 550, 200, 500, 200)
+    quad(700, 250, 600, 250, 600, 200, 700, 200)
+    quad(550, 100, 550, 150, 750, 150, 750, 100)
+    quad(750, 100, 800, 100, 800, 300, 750, 300)
+    quad(950, 200, 950, 250, 850, 250, 850, 200)
+    quad(900, 300, 900, 350, 700, 350, 700, 300)
+    quad(200, 250, 200, 400, 250, 400, 250, 250)
+    quad(100, 300, 100, 450, 150, 450, 150, 300)
+    quad(300, 350, 350, 350, 350, 500, 300, 500)
+    quad(100, 450, 100, 500, 300, 500, 300, 450)
+    quad(200, 500, 250, 500, 250, 650, 200, 650)
+    quad(100, 550, 100, 800, 150, 800, 150, 550)
+    quad(150, 700, 350, 700, 350, 750, 150, 750)
+    quad(300, 700, 350, 700, 350, 550, 300, 550)
+    quad(200, 800, 250, 800, 250, 900, 200, 900)
+    quad(300, 900, 300, 950, 500, 950, 500, 900)
+    quad(250, 800, 250, 850, 550, 850, 550, 800)
+    quad(550, 800, 550, 900, 600, 900, 600, 800)
+    quad(650, 950, 700, 950, 700, 750, 650, 750)
+    quad(550, 750, 550, 700, 400, 700, 400, 750)
+    quad(600, 750, 600, 700, 700, 700, 700, 750)
+    quad(750, 900, 800, 900, 800, 650, 750, 650)
+    quad(850, 800, 850, 750, 950, 750, 950, 800)
+    quad(800, 700, 800, 650, 900, 650, 900, 700)
+    quad(950, 400, 900, 400, 900, 600, 950, 600)
+    quad(800, 350, 850, 350, 850, 500, 800, 500)
+    quad(800, 550, 850, 550, 850, 650, 800, 650)
+    quad(750, 400, 700, 400, 700, 600, 750, 600)
+    quad(400, 550, 450, 550, 450, 450, 400, 450)
+    quad(400, 400, 450, 400, 450, 300, 400, 300)
+    quad(450, 450, 550, 450, 550, 500, 450, 500)
+    quad(500, 450, 550, 450, 550, 350, 500, 350)
+    quad(550, 350, 550, 400, 650, 400, 650, 350)
+    quad(600, 450, 600, 500, 700, 500, 700, 450)
+    quad(400, 600, 400, 700, 450, 700, 450, 600)
+    quad(
+    # Prints out an easter egg for the player to find
+    if x == 924 and y == 924:
+        print("This is an Easter Egg")
+    Extras()
+    
